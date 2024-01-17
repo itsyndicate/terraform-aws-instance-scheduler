@@ -28,3 +28,9 @@ variable "log_retention_days" {
     default = 7
   
 }
+
+variable "schedule_tag_name" {
+  description = "The name of the tag to use for scheduling"
+  type = string
+  default = "InSchedule"
+}

@@ -15,7 +15,7 @@ resource "aws_lambda_function" "instance_scheduler" {
 
   environment {
     variables = {
-      TAG_NAME = "InSchedule"
+      TAG_NAME = var.schedule_tag_name
       TABLE_NAME = aws_dynamodb_table.schedule.name
     }
   }
