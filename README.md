@@ -9,6 +9,11 @@ This repository contains a Terraform configuration that creates resources on AWS
 - Schedules the start and stop times of EC2 and RDS instances.
 - Uses AWS Lambda functions to control the state of the instances.
 - Stores the schedule in a DynamoDB table.
+- Uses tags to identify which instances to control.
+
+## Tagging
+
+The system uses tags to identify which EC2 and RDS instances to start and stop based on the schedule. You should tag your instances with the key `Schedule` and the value `true` for them to be managed by the system.
 
 ## Usage
 
