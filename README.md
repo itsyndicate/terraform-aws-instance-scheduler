@@ -13,7 +13,7 @@ This repository contains a Terraform configuration that creates resources on AWS
 
 ## Tagging
 
-The system uses tags to identify which EC2 and RDS instances to start and stop based on the schedule. You should tag your instances with the key `Schedule` and the value `true` for them to be managed by the system.
+The system uses tags to identify which EC2 and RDS instances to start and stop based on the schedule. You should tag your instances with the key provided in var `schedule_tag_name` with the value `true` for them to be managed by the system.
 
 ## Usage
 
